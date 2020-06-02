@@ -1,14 +1,3 @@
-// import { Component } from '@angular/core';
-
-// @Component({
-//   selector: 'app-root',
-//   templateUrl: './app.component.html',
-//   styleUrls: ['./app.component.css']
-// })
-// export class AppComponent {
-//   title = 'ChatApp';
-// }
-
 // ######################################################################################
 
 import {
@@ -28,15 +17,20 @@ import {
 // import { SignalRService } from 'src/services/services/signal-r.service';
 // import { Message } from 'src/models/message';
 // import { AuthServices } from 'src/services/authservices';
-import { Message } from '../app/Model/Message';
-import { SignalRService } from './services/signal-r.service';
+import { Message } from '../../Model/Message';
+import { SignalRService } from '../../services/signal-r.service';
+// @Component({
+//   selector: 'app-root',
+//   templateUrl: './app.component.html',
+//   styleUrls: ['./app.component.css'],
+//   // encapsulation: ViewEncapsulation.None,
+// })
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  // encapsulation: ViewEncapsulation.None,
+  selector: 'app-ui',
+  templateUrl: './ui.component.html',
+  styleUrls: ['./ui.component.css'],
 })
-export class AppComponent implements OnInit {
+export class UiComponent implements OnInit {
   title = 'ClientApp';
   txtMessage: string = '';
   //txt = '';
